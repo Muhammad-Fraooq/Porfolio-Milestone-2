@@ -120,11 +120,6 @@ h1 {
 
 /* Responsive Adjustments */
 @media (max-width: 1024px) {
-  /* .container {
-    flex-direction: column;
-    align-items: center;
-    gap: 40px;
-  } */
 
   .text-container h1 {
     font-size: 2rem;
@@ -189,9 +184,13 @@ h1 {
 }
 
 @media (max-width: 480px) {
+  *{
+    overflow-x: hidden;
+  }
   .container {
     gap: 15px;
     padding: 20px;
+   
   }
 
   
@@ -287,6 +286,7 @@ h1 {
   .container {
     padding: 10px;
     gap: 15px;
+  
   }
   .text-container-about h1 {
     font-size: 1.5rem;
@@ -409,3 +409,35 @@ h1 {
   }
 }
 
+/* css */
+
+.typing-container {
+  display: inline-flex;
+  align-items: center;
+}
+
+.cursor {
+  width: 3rem;
+  color: aqua;
+  margin-top: -0.3rem;
+  opacity: 1;
+  animation: blink 0.7s infinite;
+}
+
+/* Only show cursor during typing */
+.show-cursor .cursor {
+  display: inline;
+}
+
+.typing-container:not(.show-cursor) .cursor {
+  display: none;
+}
+
+@keyframes blink {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+}
