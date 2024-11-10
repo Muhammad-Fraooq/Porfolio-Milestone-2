@@ -1,0 +1,174 @@
+/* ContactForm.module.css */
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 50px;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+  gap: 2rem;
+}
+
+.formContainer {
+  width: 50%;
+  background-color: #333;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.formHeading {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.formGroup {
+  margin-bottom: 15px;
+}
+
+.label {
+  display: block;
+  font-size: 20px;
+  margin-bottom: 5px;
+  color: #555;
+}
+
+.input,
+.textarea {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  color: black;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+.textarea {
+  resize: vertical;
+}
+
+.buttonContainer {
+  width: 100%;
+  margin-top: 10px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.errorMessage {
+  color: #d9534f;
+  font-size: 20px;
+  margin-top: 10px;
+}
+
+.successMessage {
+  color: #5cb85c;
+  font-size: 20px;
+  margin-top: 10px;
+}
+
+.mapContainer {
+  width: 45%;
+  height: 400px;
+}
+
+.map {
+  width: 105%;
+  height: 155%;
+  border: none;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Media Queries */
+
+/* Tablets */
+@media (max-width: 1024px) {
+  .container {
+    padding: 30px;
+  }
+
+  .formHeading {
+    font-size: 24px;
+  }
+
+  .label {
+    font-size: 18px;
+  }
+
+  .input,
+  .textarea {
+    font-size: 15px;
+  }
+}
+
+/* Mobile devices */
+@media (max-width: 768px) {
+  .container {
+    padding: 20px;
+    flex-direction: column;
+    align-items: center;
+  }
+  .formContainer,
+  .mapContainer {
+    width: 90%;
+    margin-bottom: 20px;
+  }
+  .map{
+    height: 110%;
+  }
+ 
+  .formHeading {
+    font-size: 22px;
+  }
+
+  .label {
+    font-size: 16px;
+  }
+
+  .input,
+  .textarea {
+    font-size: 14px;
+    padding: 6px;
+  }
+
+  .buttonContainer {
+    flex-direction: column;
+  }
+
+  .errorMessage,
+  .successMessage {
+    font-size: 18px;
+  }
+}
+
+/* Small Mobile devices */
+@media (max-width: 480px) {
+  .container {
+    padding: 15px;
+    gap: 1rem;
+  }
+
+  .formHeading {
+    font-size: 20px;
+  }
+
+  .label {
+    font-size: 14px;
+  }
+
+  .input,
+  .textarea {
+    font-size: 13px;
+    padding: 5px;
+  }
+
+  .errorMessage,
+  .successMessage {
+    font-size: 16px;
+  }
+}

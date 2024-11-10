@@ -1,0 +1,64 @@
+.container {
+  max-width: 1130px; /* Limit the maximum width for larger screens */
+  margin: 0 auto; /* Center the container */
+  padding: 30px; /* Add padding around the container */
+  margin-top: 0.5rem;
+}
+
+.projectList {
+  display: grid; /* Use grid layout for project cards */
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); /* Responsive grid columns */
+  gap: 20px; /* Space between the grid items */
+}
+
+.card {
+  background-color: #333; /* White background for the card */
+  border-radius: 8px; /* Rounded corners */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  overflow: hidden; /* To contain child elements within the border */
+  transition: transform 0.2s; /* Smooth scaling on hover */
+  display: flex; /* Flexbox for layout */
+  flex-direction: column; /* Stack child elements vertically */
+  max-width: 350px; /* Limit the width of the card */
+  margin: 16px; /* Space around the card */
+}
+
+.card:hover {
+  transform: translateY(-5px); /* Slight lift effect on hover */
+}
+
+.imageWrapper {
+  position: relative; /* To position the image correctly */
+  width: 100%; /* Make it responsive */
+  height: 180px; /* Fixed height for the image */
+  overflow: hidden; /* Ensure the image doesn't overflow */
+}
+
+.image {
+  object-fit: cover; /* Ensure the image covers the area without distortion*/
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+}
+
+.details {
+  padding: 16px; /* Space inside the card for content */
+}
+.title {
+  font-size: 1.5rem; /* Font size for the title */
+  color: aqua; /* Dark gray color for the title */
+  
+}
+.heading{
+  color: aqua; /* Dark gray color for the heading */
+  margin-bottom: 8px; /* Space below the heading */
+  display: flex;
+  justify-content: center;
+}
+
+
+.description {
+  font-size: 1rem; /* Font size for the description */
+  font-weight: 500;
+  color:  rgb(180, 230, 255); /* Medium gray for the description */
+  margin: 8px 0; /* Space above and below the description */
+}

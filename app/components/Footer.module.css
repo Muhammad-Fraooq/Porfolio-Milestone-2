@@ -1,0 +1,133 @@
+/* Footer.module.css */
+
+/* General footer styling */
+.footer {
+  background-color: #333;
+  padding: 2.5rem;
+  text-align: right;
+  font-family: "Poppins", sans-serif;
+}
+
+.footerSubheading {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: aqua;
+}
+
+.footer1 {
+  text-align: left;
+  color: aqua;
+}
+
+.footer1 p {
+  margin: 1rem 0 3.2rem 0;
+  color: #b4e6ff;
+}
+
+/* Social icons styling */
+.socialFooterIcons {
+  display: flex;
+  gap: 1rem;
+}
+
+.socialFooterIcons a {
+  width: 3rem;
+  height: 3rem;
+  background-color: white;
+  color: #333;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.3s linear;
+}
+
+.socialFooterIcons a:hover {
+  color: #ebf3fe;
+  background-color: aqua;
+  transform: rotate(360deg);
+}
+
+/* Grid layout for footer content */
+.container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* Four equal columns */
+  gap: 3rem;
+  margin-left: 2rem;
+}
+
+/* Styling for list items */
+.courseList,
+.linkList,
+.blogList {
+  list-style: none;
+  padding: 0;
+}
+
+.courseItem,
+.linkItem,
+.blogItem {
+  margin: 5px 0;
+}
+
+.link {
+  text-decoration: none;
+  color: rgb(180, 230, 255);
+}
+
+.link:hover {
+  color: aqua;
+}
+
+/* Individual footer sections */
+.footer2,
+.footer3,
+.footer4 {
+  text-align: left;
+}
+
+/* Media Queries for Responsive Design */
+
+/* For tablets and smaller devices */
+@media (max-width: 768px) {
+  .container {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+  }
+  .footer1 {
+    order: 2;
+  }
+
+  .footer {
+    text-align: center; /* Center align text on smaller screens */
+  }
+
+  .socialFooterIcons {
+    justify-content: center;
+  }
+}
+
+/* For mobile devices */
+@media (max-width: 480px) {
+  .footer1,
+  .footer2,
+  .footer3,
+  .footer4 {
+    margin-left: -2rem;
+    text-align: center;
+  }
+
+  .footerSubheading {
+    font-size: 1rem; /* Smaller font size on mobile */
+  }
+
+  .footer1 p {
+    margin: 1rem 0;
+  }
+
+  .socialFooterIcons {
+    justify-content: center;
+    margin-top: 1rem;
+  }
+  
+}

@@ -1,0 +1,251 @@
+
+.container {
+  margin-top: 2rem;
+  position: relative;
+  width: 500px;
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.skillsAndCircle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  gap: 40px;
+}
+.skillsSection {
+  max-width: 800px;
+  margin: auto;
+  padding: 20px;
+  margin-left: -25rem;
+}
+
+.skillsSection h2 {
+  font-size: 2rem;
+  color: #333;
+  margin-bottom: 1rem;
+}
+
+.skill {
+  margin-bottom: 20px;
+}
+
+.skill p {
+  font-size: 1.1rem;
+  font-weight: 500;
+  margin-bottom: 5px;
+}
+
+.progressBar {
+  width: 100%;
+  height: 8px;
+  background-color: #ddd;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.progress {
+  height: 100%;
+  background-color: #4CAF50;
+  border-radius: 4px;
+}
+/* @media (max-width: 1024px) {
+  .skillsSection {  
+  }
+} */
+@media (max-width: 768px) {
+  .skillsSection {
+    padding: 15px;
+  }
+
+  .skillsSection h2 {
+    font-size: 1.8rem;
+  }
+
+  .skill p {
+    font-size: 1rem;
+  }
+
+  .progressBar {
+    height: 6px;
+  }
+}
+
+@media (max-width: 480px) {
+  .skillsSection {
+    padding: 10px;
+    margin-right: 2rem;
+  }
+
+  .skillsSection h2 {
+    font-size: 1.6rem;
+  }
+
+  .skill p {
+    font-size: 1rem;
+  }
+
+  .progressBar {
+    height: 8px;
+  }
+  .skillsAndCircle{
+    flex-direction: column;
+  }
+  .container{
+    order: 2;
+    margin-top: 5rem;
+  }
+  .skillsSection{
+    order: 1;
+    margin-left: 0rem;
+    text-align: center;
+  }
+}
+/* Right Side - Rotating Circle */
+
+.centralCircle {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 180px;
+  height: 180px;
+  border: 3px solid aqua; /* Blue border color */
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-size: 1.1rem;
+  color: aqua;
+}
+
+.outerCircle {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 350px;
+  height: 350px;
+  border: 3px solid aqua;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  animation: rotate 10s linear infinite;
+}
+
+.smallCircle {
+  position: absolute;
+  width: 65px;
+  height: 65px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  font-size: 0.8rem;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.smallCircle:hover .arrow {
+  opacity: 1;
+}
+
+.hoverText {
+  color: aqua;
+  font-size: 2.8rem;
+  font-weight: 600;
+}
+
+.circleText {
+  position: absolute;
+  font-size: 0.8rem;
+  white-space: nowrap;
+  transform-origin: center;
+  animation: rotateText 12s linear infinite;
+}
+
+@keyframes rotate {
+  0% {
+    transform: translate(-50%, -50%) rotate(0deg);
+  }
+  100% {
+    transform: translate(-50%, -50%) rotate(360deg);
+  }
+}
+
+/* Position each of the 6 small circles around the big circle */
+.outerCircle .smallCircle:nth-child(1) { top: 0%; left: 50%; transform: translate(-50%, -50%); }
+.outerCircle .smallCircle:nth-child(2) { top: 20%; left: 90%; transform: translate(-50%, -50%); }
+.outerCircle .smallCircle:nth-child(3) { top: 80%; left: 90%; transform: translate(-50%, -50%); }
+.outerCircle .smallCircle:nth-child(4) { bottom: -20%; left: 50%; transform: translate(-50%, -50%); }
+.outerCircle .smallCircle:nth-child(5) { top: 75%; left: 5%; transform: translate(-50%, -50%); }
+.outerCircle .smallCircle:nth-child(6) { top: 20%; left: 10%; transform: translate(-50%, -50%); }
+
+/* Rotate each circle's text to stay upright */
+.outerCircle .smallCircle .circleText {
+  animation: rotateText 10s linear infinite;
+}
+
+@keyframes rotateText {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(-360deg); /* Keeps text upright as circles rotate */
+  }
+}
+
+/* Media Queries for Responsive Design */
+@media (max-width: 768px) {
+.container {
+    width: 80%;
+    height: auto;
+  }
+  .iconContainer {
+    font-size: 4rem; /* Smaller icons on mobile */
+  }
+
+  .centralCircle {
+    width: 150px; /* Smaller central circle */
+    height: 150px;
+    font-size: 1rem; /* Adjust font size */
+  }
+
+  .outerCircle {
+    width: 250px; /* Smaller outer circle */
+    height: 250px;
+  }
+
+  .smallCircle {
+    width: 50px; /* Smaller small circles */
+    height: 50px;
+  }
+}
+
+@media (max-width: 480px) {
+  .iconContainer {
+    font-size: 3rem; /* Even smaller icons */
+  }
+  .hoverText {
+    font-size: 2rem;
+  }
+  .centralCircle {
+    width: 125px; /* Smaller central circle */
+    height: 125px;
+    font-size: 0.9rem; /* Adjust font size */
+  }
+
+  .outerCircle {
+    width: 210px; /* Smaller outer circle */
+    height: 210px;
+  }
+
+  .smallCircle {
+    width: 45px; /* Smaller small circles */
+    height: 45px;
+  }
+}
