@@ -78,6 +78,7 @@
       background-color: #202020;
       transform: translateX(100%);
       transition: transform 0.5s ease;
+      z-index: 1;
     }
   
     .navActive {

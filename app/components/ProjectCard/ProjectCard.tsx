@@ -23,9 +23,9 @@ const ProjectCard: React.FC<{ project: PageProps }> = ({ project }) => {
           <h2 className={styles.title}>{project.title}</h2>
           <p className={styles.description}>{project.description}</p>
           {/* Update the link to point to the external project URL */}
-          <Link href={project.url} rel="noopener noreferrer">
-            <Link href="#" className='btn'>View Project</Link>
-          </Link>
+          <div  rel="noopener noreferrer">
+            <Link href={project.url} className='btn'>View Project</Link>
+          </div>
         </div>
       </div>
     );
