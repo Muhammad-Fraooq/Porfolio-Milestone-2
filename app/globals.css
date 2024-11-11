@@ -6,7 +6,7 @@
   --main-color: #0062ff;
   --supporting-color: #ebf3fe;
   --font-color: #424242;
-  --bg-color:#ffffff;
+  --bg-color: #ffffff;
   --bg-color: #f7fcff;
   --heading-color: #000a19;
   --para-color: #504e4d;
@@ -23,6 +23,10 @@
 * {
   margin: 0;
   padding: 0;
+}
+*,
+*::before,
+*::after {
   box-sizing: border-box;
 }
 body {
@@ -37,16 +41,10 @@ body {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  align-items: flex-start ;
+  align-items: flex-start;
   padding: 20px;
   max-width: 1200px;
   margin: 0 auto;
- 
-}
-
- .profile-section{
-  margin-top: 3rem;
-  margin-left: 2rem;
 }
 
 h1 {
@@ -54,28 +52,29 @@ h1 {
   color: aqua;
   text-decoration: underline #555;
 }
- h2 {
+h2 {
   font-size: 1.8rem;
   color: #555;
   margin-bottom: 10px;
 }
 
-.about-para , .text-container-about {
+.about-para {
   font-size: 1rem;
-  color: aqua;
+  color: #b4e6ff;
   line-height: 1.6;
-  margin-bottom: 20px;  
+  margin-bottom: 20px;
 }
-.text-container-about{
-  margin-top: 2rem;
+.text-container-about,
+.text-container {
+  margin-top: 5rem;
 }
 
 /* Text Section */
 .text-container {
   max-width: 600px;
   padding: 20px;
-  margin-top: 4rem;
   margin-left: 2rem;
+  margin-top: 3rem;
 }
 .mt-3 {
   margin-top: 20px;
@@ -110,17 +109,16 @@ h1 {
 }
 
 .image-container {
-  margin-top: 3rem;
+  margin-top: 4rem;
 }
-.profile-image{
+.profile-image {
+  margin-top: 1rem;
   border-radius: 50%;
-  margin-left: 1rem;
-
+  margin-left: 3rem;
 }
 
 /* Responsive Adjustments */
 @media (max-width: 1024px) {
-
   .text-container h1 {
     font-size: 2rem;
   }
@@ -156,6 +154,8 @@ h1 {
   .text-container {
     order: 2;
     margin-left: -0.5rem;
+    margin-top: 0;
+    text-align: center;
   }
   .profile-section {
     order: 1;
@@ -184,16 +184,11 @@ h1 {
 }
 
 @media (max-width: 480px) {
-  *{
-    overflow-x: hidden;
-  }
   .container {
     gap: 15px;
     padding: 20px;
-   
   }
 
-  
   .text-container h1 {
     font-size: 1.5rem;
   }
@@ -209,9 +204,8 @@ h1 {
     width: 150px;
     height: 150px;
   }
-  .image-container{
+  .image-container {
     margin-left: 3rem;
-
   }
   .btn {
     font-size: 0.7rem;
@@ -220,29 +214,20 @@ h1 {
 }
 
 .image-container .profile-image-about {
-  flex: 2;
   border-radius: 50%;
   display: flex;
   justify-content: center;
   margin-left: 3rem;
   object-fit: cover;
 }
-.text-container-about{
+.text-container-about {
   max-width: 650px;
-  padding: 1rem;
-
-}
-.about-btn .btn{
-  text-align: left;
+  padding: 2rem;
+  margin: 0 auto;
 }
 
 /* Responsive Adjustments */
 @media (max-width: 1024px) {
-  /* .container {
-    flex-direction: column;
-    align-items: center;
-    gap: 40px;
-  } */
   .text-container-about h1 {
     font-size: 2rem;
   }
@@ -258,11 +243,10 @@ h1 {
 }
 
 @media (max-width: 768px) {
-  .container {
-    padding: 10px;
-    flex-direction: column;
-    gap: 30px;
-    
+  .text-container-about {
+    margin-top: 0px;
+    padding: 0.5rem;
+    text-align: center;
   }
   .text-container-about h1 {
     font-size: 1.8rem;
@@ -275,18 +259,18 @@ h1 {
     width: 180px;
     height: 180px;
   }
-
-  .about-btn .btn {
-    font-size: 0.9rem;
-    padding: 8px 15px;
-  }
 }
 
 @media (max-width: 480px) {
+  body {
+    overflow-x: hidden;
+  }
+  .image-container{
+    margin-top: 2rem;
+  }
   .container {
     padding: 10px;
     gap: 15px;
-  
   }
   .text-container-about h1 {
     font-size: 1.5rem;
@@ -296,28 +280,21 @@ h1 {
   .text-container-about h2 {
     font-size: 1.3rem;
     text-align: center;
-
+    margin-left: 1rem;
   }
-  .about-para{
+  .about-para {
     font-size: 0.8rem;
   }
   .profile-image-about {
     width: 150px;
     height: 150px;
+    margin-left: 2rem;
   }
-  .about-btn .btn {
-    font-size: 0.8rem;
-    padding: 6px 12px;
-    margin-top: 8rem;
-    margin-left: 5rem;
-
-  }
-
 }
 
 .services-container {
   padding: 20px;
-  max-width: 1150px;
+  max-width: 1100px;
   margin: 0 auto;
 }
 
@@ -357,7 +334,7 @@ h1 {
 
 .service-icon {
   font-size: 2rem;
-  color: #4CAF50;
+  color: #4caf50;
 }
 
 .service-card h2 {
@@ -394,6 +371,7 @@ h1 {
 @media (max-width: 480px) {
   .services-heading {
     font-size: 1.75rem;
+    margin-top: 5rem;
   }
 
   .service-card {
@@ -434,7 +412,8 @@ h1 {
 }
 
 @keyframes blink {
-  0%, 100% {
+  0%,
+  100% {
     opacity: 1;
   }
   50% {

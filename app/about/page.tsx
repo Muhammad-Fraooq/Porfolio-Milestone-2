@@ -1,7 +1,8 @@
 import Image from "next/image";
 import ProfilePic from "@/public/my-pic.jpg";
 import RotatingServices from "../components/RotatingServices/RotatingServices";
-import { FaDownload } from "react-icons/fa";
+// import { FaDownload } from "react-icons/fa";
+import Animation from "../components/Animation/Animation";
 
 export default function About() {
   return (
@@ -19,7 +20,8 @@ export default function About() {
         </div>
         <div className="text-container-about">
           <h1>About Me</h1>
-          <h2>Frontend Developer with One Year of Experience</h2>
+          {/* <h2>Frontend Developer with One Year of Experience</h2> */}
+          <Animation/>
           <p className="about-para">
             I am Muhammad Farooq, a passionate frontend developer with a year of
             experience in creating responsive, user-friendly web interfaces.
@@ -35,12 +37,12 @@ export default function About() {
               <RotatingServices />
             </div>
             {/* Download CV Button */}
-            <div className="about-btn">
+            {/* <div className="about-btn">
               <a href="/cv.pdf" download className="btn">
                 <FaDownload />
                 Download CV
               </a>
-            </div>
+            </div> */}
           </div>
         </div>
       </div>

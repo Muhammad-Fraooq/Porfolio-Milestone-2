@@ -29,11 +29,15 @@
   display: flex;
   gap: 1rem;
 }
-
+.copyright {
+  text-align: center;
+  font-size: 1.2rem;
+  color: #aaa; /* Adjust color as needed */
+}
 .socialFooterIcons a {
   width: 3rem;
   height: 3rem;
-  background-color: white;
+  background-color: #b4e6ff;
   color: #333;
   border-radius: 50%;
   display: flex;
@@ -52,8 +56,8 @@
 .container {
   display: grid;
   grid-template-columns: repeat(4, 1fr); /* Four equal columns */
-  gap: 3rem;
-  margin-left: 2rem;
+  gap: 2rem;
+  margin-left: 5rem;
 }
 
 /* Styling for list items */
@@ -72,7 +76,7 @@
 
 .link {
   text-decoration: none;
-  color: rgb(180, 230, 255);
+  color: #b4e6ff;
 }
 
 .link:hover {
@@ -84,6 +88,7 @@
 .footer3,
 .footer4 {
   text-align: left;
+  margin-left: 3rem;
 }
 
 /* Media Queries for Responsive Design */
@@ -116,6 +121,10 @@
     margin-left: -2rem;
     text-align: center;
   }
+  .footer{
+    margin-left: -2rem;
+    gap: 2rem;
+  }
 
   .footerSubheading {
     font-size: 1rem; /* Smaller font size on mobile */
@@ -125,7 +134,7 @@
     margin: 1rem 0;
   }
 
-  .socialFooterIcons {
+  .socialFooterIcons , .copyright {
     justify-content: center;
     margin-top: 1rem;
   }

@@ -1,7 +1,6 @@
 // componenets
 'use client';
 import { useEffect, useState, useMemo } from 'react';
-// import './HeadingWi'; // Import the CSS file
 
 const Animation: React.FC = () => {
   const [text, setText] = useState<string>('');
@@ -11,7 +10,7 @@ const Animation: React.FC = () => {
   const typingTexts = useMemo(
     () => [
       'Website Developer',
-      'YouTuber',
+      'Frontend Developer',
       'Website Designer',
       'Responsive Website',
       'UI & UX Designer',
@@ -59,5 +58,4 @@ const Animation: React.FC = () => {
     </h2>
   );
 };
-
 export default Animation;

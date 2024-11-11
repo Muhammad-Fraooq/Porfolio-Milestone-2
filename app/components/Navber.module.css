@@ -1,13 +1,11 @@
 
 .header {
     background-color: #333;
-    padding: 12px 10px;
+    padding: 12px 10px ;
     display: flex;
     justify-content: center;
     align-items: center;
-    /* position: fixed; */
   }
-  
   .logo {
     color: aqua;
     font-size: 1.8rem;
@@ -32,7 +30,7 @@
   
   .navLink {
     text-decoration: none;
-    color: white;
+    color: #b4e6ff;
     font-size: 1.3rem;
     transition: color 0.3s ease;
   }
@@ -67,7 +65,7 @@
     }
   
     .navLinks {
-      position: absolute;
+      position: fixed;
       right: 0;
       top: 78px;
       width: 100%;

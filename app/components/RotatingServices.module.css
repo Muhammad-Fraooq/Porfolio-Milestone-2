@@ -5,21 +5,22 @@
   width: 500px;
   height: 500px;
   display: flex;
+  margin-left: -5rem;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+
 }
 
 .skillsAndCircle {
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
   padding: 20px;
   gap: 40px;
 }
 .skillsSection {
   max-width: 800px;
-  margin: auto;
   padding: 20px;
   margin-left: -25rem;
 }
@@ -41,22 +42,22 @@
 }
 
 .progressBar {
-  width: 100%;
+  width: 200%;
   height: 8px;
-  background-color: #ddd;
+  background-color: #b4e6ff;
   border-radius: 4px;
   overflow: hidden;
 }
 
-.progress {
-  height: 100%;
-  background-color: #4CAF50;
+.progress { 
+  height: 200%;
+  background-color: aqua;
   border-radius: 4px;
 }
-/* @media (max-width: 1024px) {
-  .skillsSection {  
-  }
-} */
+.skill p {
+  color: aqua;
+}
+
 @media (max-width: 768px) {
   .skillsSection {
     padding: 15px;
@@ -72,6 +73,10 @@
 
   .progressBar {
     height: 6px;
+    width: 130%;
+  }
+  .progress{
+    width: 130%;
   }
 }
 
@@ -94,6 +99,8 @@
   }
   .skillsAndCircle{
     flex-direction: column;
+    margin-top: -2rem;
+
   }
   .container{
     order: 2;
@@ -101,7 +108,7 @@
   }
   .skillsSection{
     order: 1;
-    margin-left: 0rem;
+    margin-left: -1.5rem;
     text-align: center;
   }
 }
@@ -205,10 +212,6 @@
     width: 80%;
     height: auto;
   }
-  .iconContainer {
-    font-size: 4rem; /* Smaller icons on mobile */
-  }
-
   .centralCircle {
     width: 150px; /* Smaller central circle */
     height: 150px;
@@ -227,25 +230,27 @@
 }
 
 @media (max-width: 480px) {
-  .iconContainer {
-    font-size: 3rem; /* Even smaller icons */
+  .container{
+    margin-left: 0rem;
+    margin-top: 5rem;
+    margin-bottom: 7rem;
   }
   .hoverText {
     font-size: 2rem;
   }
   .centralCircle {
-    width: 125px; /* Smaller central circle */
-    height: 125px;
+    width: 130px; /* Smaller central circle */
+    height: 130px;
     font-size: 0.9rem; /* Adjust font size */
   }
 
   .outerCircle {
-    width: 210px; /* Smaller outer circle */
-    height: 210px;
+    width: 220px; /* Smaller outer circle */
+    height: 220px;
   }
 
   .smallCircle {
-    width: 45px; /* Smaller small circles */
-    height: 45px;
+    width: 50px; /* Smaller small circles */
+    height: 50px;
   }
 }

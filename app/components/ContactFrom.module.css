@@ -4,7 +4,7 @@
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
-  max-width: 1200px;
+  max-width: 1150px;
   margin: 0 auto;
   padding: 50px;
   margin-top: 3rem;
@@ -35,7 +35,6 @@
   margin-bottom: 5px;
   color: #555;
 }
-
 .input,
 .textarea {
   width: 100%;
@@ -49,7 +48,6 @@
 .textarea {
   resize: vertical;
 }
-
 .buttonContainer {
   width: 100%;
   margin-top: 10px;

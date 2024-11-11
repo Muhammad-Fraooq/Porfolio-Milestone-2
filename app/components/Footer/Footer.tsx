@@ -33,7 +33,6 @@ export default function Footer() {
             </Link>
           </div>
         </div>
-
         <div className={styles.footer2}>
           <p className={styles.footerSubheading}>Courses</p>
           <ul className={styles.courseList}>
@@ -64,7 +63,6 @@ export default function Footer() {
             </li>
           </ul>
         </div>
-
         <div className={styles.footer3}>
           <p className={styles.footerSubheading}>Links</p>
           <ul className={styles.linkList}>
@@ -95,7 +93,6 @@ export default function Footer() {
             </li>
           </ul>
         </div>
-
         <div className={styles.footer4}>
           <p className={styles.footerSubheading}>Projects</p>
           <ul className={styles.blogList}>
@@ -131,6 +128,9 @@ export default function Footer() {
             </li>
           </ul>
         </div>
+      </div>
+      <div className={styles.copyright}>
+        <p>© {new Date().getFullYear()} Muhammad Farooq. All rights reserved.</p>
       </div>
     </footer>
   );
