@@ -1,7 +1,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
+/* 
 :root {
   --main-color: #0062ff;
   --supporting-color: #ebf3fe;
@@ -15,7 +15,7 @@
   --btn-hover-bg-color: #003b99;
   --btn-box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
   --foorter-bg-color: #040d12;
-}
+} */
 :root {
   --background: #ffffff;
   --foreground: #171717;
@@ -29,11 +29,16 @@
 *::after {
   box-sizing: border-box;
 }
+html{
+  scroll-behavior: smooth;
+}
 body {
   background-color: #171717;
   color: white;
   font-family: "Poppins", sans-serif;
   overflow-x: hidden;
+  transition: 0.3s ease;
+  transition: all 0.3s ease;
 }
 
 /* General Container Styles */
@@ -155,7 +160,6 @@ h2 {
     order: 2;
     margin-left: -0.5rem;
     margin-top: 0;
-    text-align: center;
   }
   .profile-section {
     order: 1;
@@ -199,6 +203,11 @@ h2 {
 
   .text-container .about-para {
     font-size: 0.9rem;
+
+  }
+  .text-container{
+    text-align: center;
+
   }
   .profile-image {
     width: 150px;
@@ -217,7 +226,7 @@ h2 {
   border-radius: 50%;
   display: flex;
   justify-content: center;
-  margin-left: 3rem;
+  margin-left: 3.5rem;
   object-fit: cover;
 }
 .text-container-about {
@@ -246,7 +255,6 @@ h2 {
   .text-container-about {
     margin-top: 0px;
     padding: 0.5rem;
-    text-align: center;
   }
   .text-container-about h1 {
     font-size: 1.8rem;
@@ -272,14 +280,15 @@ h2 {
     padding: 10px;
     gap: 15px;
   }
+  .text-container-about{
+    text-align: center;
+
+  }
   .text-container-about h1 {
     font-size: 1.5rem;
-    text-align: center;
   }
-
   .text-container-about h2 {
     font-size: 1.3rem;
-    text-align: center;
     margin-left: 1rem;
   }
   .about-para {
@@ -301,13 +310,14 @@ h2 {
 .services-heading {
   text-align: center;
   font-size: 2.5rem;
-  margin-bottom: 40px;
+  margin-bottom: 30px;
 }
 
 .services-list {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
   gap: 30px;
+  margin-bottom: 2rem;
 }
 
 .service-card {
@@ -371,7 +381,7 @@ h2 {
 @media (max-width: 480px) {
   .services-heading {
     font-size: 1.75rem;
-    margin-top: 5rem;
+    margin-top: 2rem;
   }
 
   .service-card {

@@ -4,6 +4,7 @@ import { FaHtml5, FaCss3Alt, FaJs, FaReact } from "react-icons/fa";
 import { SiTypescript, SiNextdotjs } from "react-icons/si";
 import styles from "../RotatingServices.module.css";
 import { Service } from "@/types/page";
+import AnimationWrapper from "../ScrollAnimation/ScrollAnimation";
 
 const services: Service[] = [
   {
@@ -58,6 +59,7 @@ const RotatingServices: React.FC = () => {
   }, [currentIndex]);
   
   return (
+    <AnimationWrapper>
     <div className={styles.skillsAndCircle}>
     {/* Left Side - Skills Section */}
     <div className={styles.skillsSection}>
@@ -130,6 +132,7 @@ const RotatingServices: React.FC = () => {
       </div>
     </div>
   </div>
+  </AnimationWrapper>
 
   );
 };

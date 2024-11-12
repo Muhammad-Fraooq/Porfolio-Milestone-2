@@ -1,6 +1,6 @@
 /* Base styles for larger screens */
 .container {
-  max-width: 1150px; 
+  max-width: 1150px;
   margin: 0 auto;
   padding: 30px;
   margin-top: 0.5rem;
@@ -53,7 +53,7 @@
 
 .heading {
   color: aqua;
-  margin-bottom: 8px;
+  margin-bottom: 2rem;
   display: flex;
   justify-content: center;
 }
@@ -88,12 +88,15 @@
 @media (max-width: 480px) {
   .container {
     padding: 15px;
+    margin-bottom: 2rem;
   }
 
   .projectList {
     grid-template-columns: 1fr; /* Single column for smaller screens */
   }
-
+  .heading {
+    font-size: 1.8rem;
+  }
   .card {
     margin: 8px;
   }

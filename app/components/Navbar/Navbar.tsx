@@ -7,14 +7,20 @@ import { FaDownload } from "react-icons/fa";
 export default function Header() {
   const [isOpen, setIsOpen] = useState(false);
 
+  // Toggle the menu open/close
   const toggleMenu = () => {
     setIsOpen(!isOpen);
+  };
+
+  // Close the menu when a link is clicked
+  const closeMenu = () => {
+    setIsOpen(false);
   };
 
   return (
     <header className={styles.header}>
       <nav className={styles.nav}>
-        <Link href="/">
+        <Link href="/" onClick={closeMenu}>
           <h2 className={styles.logo}>Personal Portfolio</h2>
         </Link>
 
@@ -25,15 +31,15 @@ export default function Header() {
         </div>
 
         <ul className={`${styles.navLinks} ${isOpen ? styles.navActive : ""}`}>
-          <li><Link href="/" className={styles.navLink}>Home</Link></li>
-          <li><Link href="/about" className={styles.navLink}>About</Link></li>
-          <li><Link href="/services" className={styles.navLink}>Services</Link></li>
-          <li><Link href="/project" className={styles.navLink}>Project</Link></li>
-          <li><Link href="/contact" className={styles.navLink}>Contact</Link></li>
-          
-          {/* Download CV button at the bottom */}
+          <li onClick={closeMenu}><Link href="/" className={styles.navLink}>Home</Link></li>
+          <li onClick={closeMenu}><Link href="/about" className={styles.navLink}>About</Link></li>
+          <li onClick={closeMenu}><Link href="/services" className={styles.navLink}>Services</Link></li>
+          <li onClick={closeMenu}><Link href="/project" className={styles.navLink}>Project</Link></li>
+          <li onClick={closeMenu}><Link href="/contact" className={styles.navLink}>Contact</Link></li>
+
+          {/* Download CV button */}
           <div className={styles.navBtn}>
-            <Link href="/cv.pdf" download className="btn btn-primary">
+            <Link href="/cv.pdf" download className="btn btn-primary" onClick={closeMenu}>
               <FaDownload /> Download CV
             </Link>
           </div>
@@ -42,11 +48,3 @@ export default function Header() {
     </header>
   );
 }
-
-
-{/* <div className="text-center nav-btn">
-<a href="/my-\cv.pdf" download className="btn btn-primary">
-<FaDownload/>
-  Download CV
-</a>
-</div> */}

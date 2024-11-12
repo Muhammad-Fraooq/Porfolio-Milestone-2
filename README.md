@@ -1,36 +1,29 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# My Portfolio
 
-## Getting Started
+Welcome to my personal portfolio website built with **Next.js**, **Tailwind CSS**, and **GSAP** for smooth animations.
 
-First, run the development server:
+This project showcases my work, skills, and services in a modern and interactive way.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## Tech Stack
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+- **Next.js**: A React framework for building fast, SEO-friendly, and server-rendered applications.
+- **Tailwind CSS**: A utility-first CSS framework that makes it easy to build responsive designs quickly.
+- **GSAP**: A powerful animation library that provides smooth and performant animations.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Features
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+- **Responsive Design**: The portfolio is fully responsive and looks great on all screen sizes.
+- **Smooth Animations**: Sections and elements come to life with smooth animations powered by GSAP and ScrollTrigger.
+- **Optimized for Performance**: The site uses server-side rendering for optimal performance while providing interactive client-side features.
+- **Modern Layout**: Clean, minimalist design focusing on user experience and easy navigation.
 
-## Learn More
+## Contact Me
 
-To learn more about Next.js, take a look at the following resources:
+Feel free to reach out if you'd like to collaborate, ask questions, or just want to say hi! You can contact me via the following methods:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- **Email**: [![Email](https://img.shields.io/badge/-Email-blue?style=flat&logo=gmail)](mailto:your.email@example.com)
+- **LinkedIn**: [![LinkedIn](https://img.shields.io/badge/-LinkedIn-blue?style=flat&logo=linkedin)](https://www.linkedin.com/in/your-profile)
+- **GitHub**: [![GitHub](https://img.shields.io/badge/-GitHub-black?style=flat&logo=github)](https://github.com/your-username)
+- **Twitter**: [![Twitter](https://img.shields.io/badge/-Twitter-1DA1F2?style=flat&logo=twitter)](https://twitter.com/yourTwitterHandle)
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+You can also fill out the contact form on the **Contact** page of the portfolio!

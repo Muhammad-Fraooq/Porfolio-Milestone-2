@@ -1,9 +1,10 @@
 import { FaCode, FaGlobe, FaPalette, FaTachometerAlt, FaSearch, FaWrench } from "react-icons/fa";
-
+import AnimationWrapper from "../components/ScrollAnimation/ScrollAnimation";
 export default function Services() {
   return (
     <>
       <div className="services-container">
+        <AnimationWrapper>
         <h1 className="services-heading">My Services</h1>
         <div className="services-list">
 
@@ -74,6 +75,7 @@ export default function Services() {
           </div>
 
         </div>
+        </AnimationWrapper>
       </div>
     </>
   );

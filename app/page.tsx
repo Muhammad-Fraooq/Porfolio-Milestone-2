@@ -1,20 +1,23 @@
-import React from 'react'
+import React from "react";
 import About from "./about/page";
 import Contact from "./contact/page";
 import Home from "./home/page";
 // import Projects from "./project/page";
 import Services from "./services/page";
+import AnimationWrapper from "./components/ScrollAnimation/ScrollAnimation";
 
-export default function HomePage (){
-   return(
+export default function HomePage() {
+  return (
     <>
-    <main className=''>
-    <Home/>
-      <About/>
-      <Services/>
-      {/* <Projects/> */}
-      <Contact/>
-    </main>
+      <main className="">
+        <AnimationWrapper>
+          <Home />
+        </AnimationWrapper>
+        <About />
+        <Services />
+        {/* <Projects /> */}
+        <Contact />
+      </main>
     </>
-   )
+  );
 }

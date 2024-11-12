@@ -84,13 +84,13 @@
     }
   
     .navLink {
-      margin: auto;
+      /* margin: 0 auto; */
       font-size: 1.5rem;
       padding: 20px;
    
    }
    .navBtn {
-    margin-top: 0 auto; /* Push the Download CV button to the bottom */
+    margin-top: 0 auto; 
     margin-bottom: 20px;
   }
   }
@@ -103,6 +103,8 @@
   
     .navLink {
       font-size: 1.2rem;
+      margin-top: 0 auto; 
     }
+
   }
   
