@@ -13,7 +13,9 @@ export default function HomePage() {
         <AnimationWrapper>
           <Home />
         </AnimationWrapper>
+        <AnimationWrapper>
         <About />
+        </AnimationWrapper>
         <Services />
         {/* <Projects /> */}
         <Contact />

@@ -92,7 +92,23 @@
 }
 
 /* Media Queries for Responsive Design */
-
+@media (max-width: 820px) {
+  .container {
+    margin-left: 3rem;
+  }
+  .footer2,
+  .footer3,
+  .footer4 {
+    margin-top: 2.5rem;
+  }
+  .socialFooterIcons{
+    margin-top: -1rem;
+  }
+  .copyright{
+    text-align: center;
+    margin-top: 1rem;
+  }
+}
 /* For tablets and smaller devices */
 @media (max-width: 768px) {
   .container {
@@ -102,28 +118,26 @@
   .footer1 {
     order: 2;
   }
-
   .footer {
     text-align: center; /* Center align text on smaller screens */
   }
 
   .socialFooterIcons {
+    display: flex;
     justify-content: center;
   }
 }
 
 /* For mobile devices */
 @media (max-width: 480px) {
-  .footer1,
+  .footer {
+    margin-left: -7rem;
+    text-align: center;
+  }
   .footer2,
   .footer3,
   .footer4 {
-    margin-left: -2rem;
-    text-align: center;
-  }
-  .footer{
-    margin-left: -2rem;
-    gap: 2rem;
+    margin-top: 0rem;
   }
 
   .footerSubheading {
@@ -134,9 +148,12 @@
     margin: 1rem 0;
   }
 
-  .socialFooterIcons , .copyright {
-    justify-content: center;
+  .socialFooterIcons,
+  .copyright p {
     margin-top: 1rem;
   }
-  
+  .copyright p {
+    font-size: 1rem;
+    margin-left: 6rem ;
+  }
 }

@@ -21,9 +21,9 @@ This project showcases my work, skills, and services in a modern and interactive
 
 Feel free to reach out if you'd like to collaborate, ask questions, or just want to say hi! You can contact me via the following methods:
 
-- **Email**: [![Email](https://img.shields.io/badge/-Email-blue?style=flat&logo=gmail)](mailto:your.email@example.com)
-- **LinkedIn**: [![LinkedIn](https://img.shields.io/badge/-LinkedIn-blue?style=flat&logo=linkedin)](https://www.linkedin.com/in/your-profile)
-- **GitHub**: [![GitHub](https://img.shields.io/badge/-GitHub-black?style=flat&logo=github)](https://github.com/your-username)
-- **Twitter**: [![Twitter](https://img.shields.io/badge/-Twitter-1DA1F2?style=flat&logo=twitter)](https://twitter.com/yourTwitterHandle)
+- **Email**: [![Email](https://img.shields.io/badge/-Email-blue?style=flat&logo=gmail)](mailto:muhammad888xyz@gmail.com)
+- **LinkedIn**: [![LinkedIn](https://img.shields.io/badge/-LinkedIn-blue?style=flat&logo=linkedin)](https://www.linkedin.com/in/muhammad-farooq-developer/)
+- **GitHub**: [![GitHub](https://img.shields.io/badge/-GitHub-black?style=flat&logo=github)](https://github.com/Muhammad-Fraooq)
+- **Facebook**: [![Facebook](https://img.shields.io/badge/-Facebook-3b5998?style=flat&logo=facebook)](https://www.facebook.com/profile.php?id=61557075680613&mibextid=ZbWKwL)
 
 You can also fill out the contact form on the **Contact** page of the portfolio!

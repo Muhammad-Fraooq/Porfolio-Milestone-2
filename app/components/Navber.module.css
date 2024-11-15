@@ -1,7 +1,7 @@
 
 .header {
     background-color: #333;
-    padding: 12px 10px ;
+    padding: 12px 10px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -59,6 +59,18 @@
   }
   
   /* Responsive styles */
+  @media(max-width: 820px){
+    .logo{
+      margin-left: 1rem;
+    }
+    /* .navBtn .btn{
+      padding: 8px 10px;
+      font-size: 0.8rem;
+    } */
+    .btn-nav{
+      padding: 8px 10px;
+    }
+  }
   @media (max-width: 768px) {
     .hamburger {
       display: flex; /* Show hamburger on mobile */
@@ -84,7 +96,6 @@
     }
   
     .navLink {
-      /* margin: 0 auto; */
       font-size: 1.5rem;
       padding: 20px;
    

@@ -37,27 +37,27 @@ export default function Footer() {
           <p className={styles.footerSubheading}>Courses</p>
           <ul className={styles.courseList}>
             <li className={styles.courseItem}>
-              <Link className={styles.link} href="/">
+              <Link className={styles.link} href="https://www.codecademy.com/learn/learn-html" target="_blank">
               HTML5
               </Link>
             </li>
             <li className={styles.courseItem}>
-              <Link className={styles.link} href="/">
+              <Link className={styles.link} href="https://www.codecademy.com/learn/learn-css" target="_blank">
                 CSS3
               </Link>
             </li>
             <li className={styles.courseItem}>
-              <Link className={styles.link} href="/">
+              <Link className={styles.link} href="https://www.codecademy.com/learn/introduction-to-javascript" target="_blank">
                 JavaScript
               </Link>
             </li>
             <li className={styles.courseItem}>
-              <Link className={styles.link} href="/">
+              <Link className={styles.link} href="/https://v1.scrimba.com/playlist/p7P5Hd" target="_blank">
                 React
               </Link>
             </li>
             <li className={styles.courseItem}>
-              <Link className={styles.link} href="/">
+              <Link className={styles.link} href="/https://nextjs.org/docs" target="_blank">
                 Next.js
               </Link>
             </li>
@@ -130,7 +130,7 @@ export default function Footer() {
         </div>
       </div>
       <div className={styles.copyright}>
-        <p>© {new Date().getFullYear()} Muhammad Farooq. All rights reserved.</p>
+        <p>&copy; {new Date().getFullYear()} Muhammad Farooq. All rights reserved.</p>
       </div>
     </footer>
   );

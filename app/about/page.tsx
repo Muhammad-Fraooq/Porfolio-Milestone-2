@@ -2,14 +2,11 @@ import Image from "next/image";
 import ProfilePic from "@/public/my-pic.jpg";
 import RotatingServices from "../components/RotatingServices/RotatingServices";
 import Animation from "../components/Animation/Animation";  
-import AnimationWrapper from "../components/ScrollAnimation/ScrollAnimation";
 
 export default function About() {
   return (
     <>
       <div className="container">
-        {/* Image Section with Animation */}
-        <AnimationWrapper>
           <div className="image-container">
             <Image
               src={ProfilePic}
@@ -20,10 +17,6 @@ export default function About() {
               objectFit="cover"
             />
           </div>
-        </AnimationWrapper>
-
-        {/* Text Section with Animation */}
-        <AnimationWrapper>
           <div className="text-container-about">
             <h1>About Me</h1>
             <Animation/>
@@ -36,21 +29,8 @@ export default function About() {
               adapt to the latest industry trends and technologies to deliver
               efficient and visually appealing solutions.
             </p>
-
-            {/* Frontend Skills Section */}
-            <div>
               <RotatingServices />
-            </div>
-
-            {/* Download CV Button (Optional) */}
-            {/* <div className="about-btn">
-              <a href="/cv.pdf" download className="btn">
-                <FaDownload />
-                Download CV
-              </a>
-            </div> */}
           </div>
-        </AnimationWrapper>
       </div>
     </>
   );

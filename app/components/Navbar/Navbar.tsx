@@ -39,7 +39,7 @@ export default function Header() {
 
           {/* Download CV button */}
           <div className={styles.navBtn}>
-            <Link href="/cv.pdf" download className="btn btn-primary" onClick={closeMenu}>
+            <Link href="/cv.pdf" download className="btn btn-nav" onClick={closeMenu}>
               <FaDownload /> Download CV
             </Link>
           </div>

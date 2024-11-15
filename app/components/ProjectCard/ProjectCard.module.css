@@ -53,7 +53,7 @@
 
 .heading {
   color: aqua;
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
   display: flex;
   justify-content: center;
 }
@@ -66,6 +66,11 @@
 }
 
 /* Media Query for tablets (max-width: 768px) */
+@media (max-width: 820px) {
+  .container{
+    max-width: 750px;
+  }
+}
 @media (max-width: 768px) {
   .container {
     padding: 20px;
