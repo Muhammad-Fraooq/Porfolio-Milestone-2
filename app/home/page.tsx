@@ -42,7 +42,6 @@ export default function Home() {
               className="profile-image"
               width={250}
               height={250}
-              objectFit="cover"
             />
           </div>
         </div>

@@ -14,7 +14,6 @@ export default function About() {
               className="profile-image-about"
               width={250}
               height={250}
-              objectFit="cover"
             />
           </div>
           <div className="text-container-about">

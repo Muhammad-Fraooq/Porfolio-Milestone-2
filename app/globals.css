@@ -8,7 +8,8 @@
 }
 
 /* Define Custom Properties */
-:root {
+
+:root { /* Custom Properties  */
   --background-color: #171717;
   --primary-color: aqua;
   --secondary-color: #555;

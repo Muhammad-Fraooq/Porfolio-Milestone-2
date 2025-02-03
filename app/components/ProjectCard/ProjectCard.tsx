@@ -17,7 +17,6 @@ const ProjectCard: React.FC<{ project: PageProps }> = ({ project }) => {
             className={styles.image}  // CSS class for image styling
           />
         </div>
-        
         {/* Project Details */}
         <div className={styles.details}>
           <h2 className={styles.title}>{project.title}</h2>
