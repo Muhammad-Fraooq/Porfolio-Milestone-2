@@ -127,15 +127,7 @@ const ContactForm = () => {
 
       {/* Map Section */}
       <div className={styles.mapContainer}>
-        <iframe
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d28677.052393969097!2d68.92854579135103!3d26.045608946844023!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39496189708a4859:0x52f62a8866820f7!2sSanghar, Sindh, Pakistan!5e0!3m2!1sen!2s!4v1731001523026!5m2!1sen!2s"
-          width="600"
-          height="450"
-          className={styles.map}
-          allowFullScreen
-          loading="lazy"
-          referrerPolicy="no-referrer-when-downgrade"
-        ></iframe>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d57933.37063938541!2d67.09169308248796!3d24.835292949346865!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3eb33b07c73d0a7f%3A0xecc47fa378e95fd5!2sKorangi%2C%20Karachi%2C%20Pakistan!5e0!3m2!1sen!2s!4v1739987263810!5m2!1sen!2s" width="600" height="450" allowFullScreen loading="lazy" referrerPolicy="no-referrer-when-downgrade" className={styles.map}></iframe>
       </div>
     </div>
   );
