@@ -52,6 +52,10 @@
   width: 100%;
   margin-top: 10px;
   text-align: center;
+}
+
+.buttonContainer button {
+  width: 100%; /* Makes the button full-width inside the container */
   display: flex;
   justify-content: center;
   align-items: center;

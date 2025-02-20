@@ -1,6 +1,5 @@
 // AnimationWrapper.tsx (this file should include 'use client' at the top)
 'use client';
-
 import { useRef, useEffect } from "react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";

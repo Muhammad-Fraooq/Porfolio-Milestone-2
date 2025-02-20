@@ -1,7 +1,7 @@
 import Image from "next/image";
 import ProfilePic from "@/public/my-pic.jpg";
-import RotatingServices from "../components/RotatingServices/RotatingServices";
-import Animation from "../components/Animation/Animation";  
+import RotatingServices from "../components/RotatingServices/RotatingServices";  
+import TypingWriter from "../components/TypingWritter";
 
 export default function About() {
   return (
@@ -18,7 +18,7 @@ export default function About() {
           </div>
           <div className="text-container-about">
             <h1>About Me</h1>
-            <Animation/>
+            <TypingWriter/>
             <p className="about-para">
               I am Muhammad Farooq, a passionate frontend developer with a year of
               experience in creating responsive, user-friendly web interfaces.

@@ -1,11 +1,9 @@
+import { Params } from '@/types/page';
 import Image from 'next/image';
 
-interface ProjectProps {
-    params: { slug: string };
-}
 
 // Project component that displays project details
-const Project: React.FC<ProjectProps> = ({ params }) => {
+const Project: React.FC<Params> = ({ params }) => {
     const { slug } = params;
 
     // Example project data for demonstration; replace with a real data fetch if needed

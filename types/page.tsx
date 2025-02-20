@@ -1,4 +1,4 @@
-export interface PageProps {    
+export interface CardProps {    
         title: string;
         description: string;  
         image: string;
@@ -7,7 +7,7 @@ export interface PageProps {
   
 }
 export interface Params{
-  slug: string 
+  params: { slug: string };
 }
 export interface FormDataTypes{
   name: string,

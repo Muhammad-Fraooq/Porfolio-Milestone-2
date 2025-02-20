@@ -110,7 +110,6 @@ const ContactForm = () => {
             />
           </div>
           <div className={styles.buttonContainer}>
-            {/* <a href="#" className="btn" onClick={onClickHandler}>Submit</a> */}
             <button onClick={onClickHandler} className="btn">Submit</button>
           </div>
 

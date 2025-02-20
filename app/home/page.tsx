@@ -1,6 +1,6 @@
 import Image from "next/image";
 import PIC from "@/public/my-pic.jpg";
-import Animation from "../components/Animation/Animation";
+import TypingWriter from "../components/TypingWritter";
 
 export default function Home() {
   return (
@@ -9,7 +9,7 @@ export default function Home() {
         {/* Text Section */}
         <div className="text-container">
           <h1>Hy, I&apos;m Muhammad Farooq</h1>
-          <Animation/>
+          <TypingWriter/>
           <p className="about-para">
             Welcome to my personal portfolio! I am a frontend developer with one
             year of experience in building responsive and dynamic web
