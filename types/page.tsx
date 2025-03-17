@@ -1,15 +1,15 @@
-export interface CardProps {    
-        title: string;
-        description: string;  
-        image: string;
-        slug: string;
-        url:string
-  
+export interface CardProps {
+  title: string;
+  description: string;
+  image: string;
+  slug: string;
+  url: string
+
 }
-export interface Params{
+export interface Params {
   params: { slug: string };
 }
-export interface FormDataTypes{
+export interface FormDataTypes {
   name: string,
   email: string,
   phone: string,

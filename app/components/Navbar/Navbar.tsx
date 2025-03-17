@@ -3,7 +3,8 @@ import Link from "next/link";
 import { useState } from "react";
 import styles from "../Navber.module.css";
 import { FaDownload } from "react-icons/fa";
-
+import Image from "next/image";
+import LOGO from "@/public/logo.jpeg"
 export default function Header() {
   const [isOpen, setIsOpen] = useState(false);
 
@@ -21,7 +22,7 @@ export default function Header() {
     <header className={styles.header}>
       <nav className={styles.nav}>
         <Link href="/" onClick={closeMenu}>
-          <h2 className={styles.logo}>Personal Portfolio</h2>
+          <Image className={styles.logo} src={LOGO} alt="logo"/>
         </Link>
 
         <div className={styles.hamburger} onClick={toggleMenu}>

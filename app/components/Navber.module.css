@@ -2,16 +2,19 @@
 .header {
     background-color: #333;
     padding: 12px 10px;
+    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
+    position: fixed;
+    z-index: 50;
+    box-shadow: 10px 10px 12px rgba(61, 51, 51, 0.3);
   }
+  
   .logo {
-    color: aqua;
-    font-size: 1.8rem;
-    font-weight: bold;
-    margin-left: 3rem;
-    margin-top: 0.5rem; 
+    margin-left: 3.5rem;
+    width: 33%;
+    border-radius: 50%;
   }
   .nav {
     display: flex;
@@ -32,7 +35,7 @@
     text-decoration: none;
     color: #b4e6ff;
     font-size: 1.3rem;
-    transition: color 0.3s ease;
+    transition: color 0.3s ease-in-out all;
   }
   
   .navLink:hover {
@@ -68,6 +71,13 @@
     }
   }
   @media (max-width: 768px) {
+    .header{
+      padding: 12px 12px;
+    }
+    .logo {
+      width: 30%;
+      margin-left: 1rem;
+    }
     .hamburger {
       display: flex; /* Show hamburger on mobile */
     }
@@ -75,9 +85,9 @@
     .navLinks {
       position: fixed;
       right: 0;
-      top: 78px;
+      top: 63px;
       width: 100%;
-      height: 70vh;
+      height: 65vh;
       flex-direction: column;
       justify-content: center;
       align-items: center;
@@ -85,6 +95,7 @@
       transform: translateX(100%);
       transition: transform 0.5s ease;
       z-index: 1;
+      gap: 1.5rem;
     }
   
     .navActive {
@@ -93,9 +104,8 @@
   
     .navLink {
       font-size: 1.5rem;
-      padding: 20px;
-   
    }
+   
    .navBtn {
     margin-top: 0 auto; 
     margin-bottom: 20px;
@@ -103,14 +113,9 @@
   }
 
   @media (max-width: 480px) {
-    .logo {
-      font-size: 1.5rem;
-      margin-left: 0.7rem;
-    }
-  
-    .navLink {
+  .navLink {
       font-size: 1.2rem;
-      margin-top: 1rem auto; 
+      margin-top: 2rem; 
     }
 
   }
