@@ -1,4 +1,4 @@
-import { Params } from '@/types/page';
+import { Params } from '@/types/types'
 import Image from 'next/image';
 
 
@@ -17,7 +17,7 @@ const Project: React.FC<Params> = ({ params }) => {
     return (
         <div>
             <h1>{projectData.title}</h1>
-            <Image 
+            <Image
                 src={projectData.image}
                 alt={projectData.title}
                 width={800}

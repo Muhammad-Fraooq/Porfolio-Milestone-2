@@ -1,7 +1,7 @@
 "use client";
 import React, { useState } from "react";
 import * as Yup from "yup";
-import { FormDataTypes } from "@/types/page";
+import { FormDataTypes } from "@/types/types";
 import styles from "../ContactFrom.module.css"; // Import CSS module
 
 const contactFormSchema = Yup.object().shape({

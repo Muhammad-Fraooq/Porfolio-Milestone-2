@@ -1,7 +1,7 @@
 'use client';
 import Image from 'next/image';
 import Link from 'next/link';
-import { CardProps } from '@/types/page'; // Ensure this type includes the `url` property
+import { CardProps } from '@/types/types'; // Ensure this type includes the `url` property
 import styles from './ProjectCard.module.css'; // Assuming CSS styles are in the same folder
 const ProjectCard: React.FC<{ project: CardProps }> = ({ project }) => {
     return (

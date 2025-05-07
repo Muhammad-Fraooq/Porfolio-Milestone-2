@@ -1,5 +1,5 @@
 import Image from "next/image";
-import PIC from "@/public/about.jpg";
+import PIC from "@/public/my-pic.jpg";
 import TypingWriter from "../components/TypingWritter";
 
 export default function Home() {

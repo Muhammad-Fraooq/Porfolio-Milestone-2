@@ -3,7 +3,7 @@ import React, { useState, useEffect } from "react";
 import { FaHtml5, FaCss3Alt, FaJs, FaReact } from "react-icons/fa";
 import { SiTypescript, SiNextdotjs } from "react-icons/si";
 import styles from "../RotatingServices.module.css";
-import { Service } from "@/types/page";
+import { Service } from "@/types/types";
 import AnimationWrapper from "../ScrollAnimation/ScrollAnimation";
 
 const services: Service[] = [
