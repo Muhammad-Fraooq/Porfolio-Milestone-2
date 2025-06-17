@@ -72,7 +72,7 @@ const projects = [
 
 export default function Projects() {
   return (
-    <div className={styles.container}>
+    <div className={styles.container} id="project">
       <AnimationWrapper>
         <div>
           <h1 style={{ marginTop: "2rem" }} className={styles.heading}>

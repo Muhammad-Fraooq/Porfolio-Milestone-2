@@ -67,27 +67,27 @@ export default function Footer() {
           <p className={styles.footerSubheading}>Links</p>
           <ul className={styles.linkList}>
             <li className={styles.linkItem}>
-              <Link className={styles.link} href="/">
+              <Link className={styles.link} href="#">
                 Home
               </Link>
             </li>
             <li className={styles.linkItem}>
-              <Link className={styles.link} href="/about">
+              <Link className={styles.link} href="#about">
                 About
               </Link>
             </li>
             <li className={styles.linkItem}>
-              <Link className={styles.link} href="/services">
+              <Link className={styles.link} href="#services">
                 Services
               </Link>
             </li>
             <li className={styles.linkItem}>
-              <Link className={styles.link} href="/project">
+              <Link className={styles.link} href="#project">
                Projects
               </Link>
             </li>
             <li className={styles.linkItem}>
-              <Link className={styles.link} href="/contact">
+              <Link className={styles.link} href="#contact">
                 Contact
               </Link>
             </li>

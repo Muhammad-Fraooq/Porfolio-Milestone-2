@@ -4,7 +4,7 @@ import AnimationWrapper from "../components/ScrollAnimation/ScrollAnimation";
 
 export default function ContactPage() {
   return (
-    <div>
+    <div id="contact">
       <AnimationWrapper>
       <ContactForm />
       </AnimationWrapper>

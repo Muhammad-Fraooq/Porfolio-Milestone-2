@@ -6,7 +6,7 @@ import TypingWriter from "../components/TypingWritter";
 export default function About() {
   return (
     <>
-      <div className="container">
+      <div className="container" id="about">
           <div className="image-container">
             <Image
               src={ProfilePic}

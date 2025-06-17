@@ -2,7 +2,7 @@ import React from "react";
 import About from "./about/page";
 import Contact from "./contact/page";
 import Home from "./home/page";
-// import Projects from "./project/page";
+import Projects from "./project/page";
 import Services from "./services/page";
 import AnimationWrapper from "./components/ScrollAnimation/ScrollAnimation";
 
@@ -17,7 +17,7 @@ export default function HomePage() {
         <About />
         </AnimationWrapper>
         <Services />
-        {/* <Projects /> */}
+        <Projects />
         <Contact />
       </main>
     </>

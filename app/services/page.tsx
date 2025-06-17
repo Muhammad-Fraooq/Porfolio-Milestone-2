@@ -3,7 +3,7 @@ import AnimationWrapper from "../components/ScrollAnimation/ScrollAnimation";
 export default function Services() {
   return (
     <>
-      <div className="services-container">
+      <div className="services-container" id="services">
         <AnimationWrapper>
         <h1 className="services-heading">My Services</h1>
         <div className="services-list">
