@@ -27,3 +27,7 @@ Feel free to reach out if you'd like to collaborate, ask questions, or just want
 - **Facebook**: [![Facebook](https://img.shields.io/badge/-Facebook-3b5998?style=flat&logo=facebook)](https://www.facebook.com/profile.php?id=61557075680613&mibextid=ZbWKwL)
 
 You can also fill out the contact form on the **Contact** page of the portfolio!
+
+## 📄 License
+
+This project is licensed under the MIT License. See [LICENSE](LICENSE)
