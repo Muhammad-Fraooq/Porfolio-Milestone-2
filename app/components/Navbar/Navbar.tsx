@@ -6,6 +6,7 @@ import { FaDownload } from "react-icons/fa";
 import Image from "next/image";
 import LOGO from "@/public/logo.jpeg"
 export default function Header() {
+  
   const [isOpen, setIsOpen] = useState(false);
 
   // Toggle the menu open/close
@@ -40,7 +41,7 @@ export default function Header() {
 
           {/* Download CV button */}
           <div className={styles.navBtn}>
-            <Link href="/pdf.pdf" download className="btn btn-nav" onClick={closeMenu}>
+            <Link href="/resume.pdf" download className="btn btn-nav" onClick={closeMenu}>
               <FaDownload /> Download CV
             </Link>
           </div>

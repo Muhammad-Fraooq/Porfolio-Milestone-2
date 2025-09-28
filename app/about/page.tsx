@@ -1,5 +1,5 @@
 import Image from "next/image";
-import ProfilePic from "@/public/about.jpg";
+import ProfilePic from "@/public/my-image.jpg";
 import RotatingServices from "../components/RotatingServices/RotatingServices";  
 import TypingWriter from "../components/TypingWritter";
 
